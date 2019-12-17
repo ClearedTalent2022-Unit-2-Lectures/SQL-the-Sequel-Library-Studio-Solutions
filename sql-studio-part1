@@ -51,6 +51,10 @@ DELETE FROM movies WHERE movie_id = 3;
 SELECT * FROM movies;
 SELECT * FROM directors;
 
+/* 13) Try to delete one person from the directors table. */
+DELETE FROM directors WHERE director_id = 3;
+/* This command results in an error because of the foreign key assignment. */
+
 /* Bonus Missions 1 & 2. */
 SELECT title AS Title, year_released AS Released, last_name AS "Last Name" FROM movies
 INNER JOIN directors ON movies.director_id=directors.director_id;
