@@ -1,7 +1,7 @@
 # Return mystery book titles and ISBNs
 
 SELECT title, isbn
-FROM book WHERE genre_id IN (SELECT genre_id FROM genre WHERE genre_type LIKE 'Mystery');
+FROM book WHERE genre_id IN (SELECT genre_id FROM genre WHERE genres LIKE 'Mystery');
 
 # Return all of the titles and author’s first and last names for books written by authors who are currently living.
 
